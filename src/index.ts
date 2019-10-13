@@ -1,6 +1,5 @@
 import Vue from "vue";
 import Hello from './components/Hello.vue';
-import EmployeeQuery from 'vue-employee-query';
 
 // let app1 = new Vue({
 //     el: '.app',
