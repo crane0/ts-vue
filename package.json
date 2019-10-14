@@ -27,6 +27,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-employee-query-crane0": "^1.0.1"
   }
 }

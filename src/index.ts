@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Hello from './components/Hello.vue';
+import EmployeeQuery from 'vue-employee-query-crane0'
 
 // let app1 = new Vue({
 //     el: '.app',
@@ -9,11 +10,31 @@ import Hello from './components/Hello.vue';
 //     template: `<h1>Hello {{ name }}</h1>`
 // });
 
-let app2 = new Vue({
+// let app2 = new Vue({
+//     el: '.app',
+//     components: {
+//         Hello
+//     },
+//     template: `<hello />`
+// });
+
+let app = new Vue({
     el: '.app',
     components: {
-        Hello
+        EmployeeQuery
     },
-    template: `<hello />`
+    template: `<employee-query @query="getParam" :department="department" />`,
+    data: {
+        department: [
+            { department: '技术部', departmentId: 1 },
+            { department: '产品部', departmentId: 2 },
+            { department: '市场部', departmentId: 3 },
+            { department: '运营部', departmentId: 4 }
+        ]
+    },
+    methods: {
+        getParam: function (param: any) {
+            console.log(param)
+        }
+    }
 });
-

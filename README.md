@@ -104,3 +104,13 @@ module.exports = {
 以上是手动创建 vue + ts 项目需要注意的问题，
 
 > 如果是使用 vue-cli 创建 vue 项目，只需要在添加一个 typescript 的依赖即可，所有的配置工作 vue 都会自动完成。
+
+--- 
+
+## 43 组件发布，该项目使用
+
+在 [ts-vue-component](https://github.com/crane0/ts-vue-component) 项目中，构建发布了一个组件 [vue-employee-query-crane0](https://www.npmjs.com/package/vue-employee-query-crane0)，
+
+在这个项目测试使用一下，`src/index.ts`，
+
+使用的就是 [ts-vue-component](https://github.com/crane0/ts-vue-component) 开发环境的代码
